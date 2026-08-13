@@ -1,0 +1,24 @@
+{
+    "name": "webplo/pipeline-test-package",
+    "description": "Throwaway package used to test the composer-update GitHub Actions pipeline",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webplo\\PipelineTestPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webplo\\PipelineTestPackage\\PipelineTestServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
